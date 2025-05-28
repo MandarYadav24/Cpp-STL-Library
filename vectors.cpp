@@ -24,6 +24,21 @@ void vectorFunction() {
 		cout<< "(" << p.first << "," <<p.second<< ")";
 	}
 	cout<<endl;
+
+	vector<int> vec1(5, 10);
+	vector<int> vec2(vec1);
+
+	cout << "vec1: ";
+	for (int x : vec1) cout << x << " ";
+	cout << endl;
+
+	cout << "vec2: ";
+	for (int x : vec2) cout << x << " ";
+	cout << endl;
+
+	vector<int>::iterator vIt = v.begin();
+	vIt++;
+	cout << "Second element using iterator: " << *vIt << endl;
 }
 
 int main() {
